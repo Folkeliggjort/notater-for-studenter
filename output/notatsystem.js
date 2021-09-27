@@ -1,4 +1,4 @@
-export class Notat {
+class Notat {
 
   constructor(link, tittel, forfatter, semester, beskrivelse) {
     this._link = link; //str
@@ -45,7 +45,7 @@ export class Notat {
   }
 
 }
-export class Emne {
+class Emne {
   constructor(navn,emnekode) {
     this._navn = navn; //str
     this._emnekode = emnekode; //str
@@ -72,8 +72,7 @@ export class Emne {
   }
 
 }
-
-export class Universitet {
+class Universitet {
 
   constructor(navn, forkortelse) {
     this._navn = navn; //str
@@ -106,7 +105,7 @@ export class Universitet {
   }
 
 }
-export class Notatsystem {
+class Notatsystem {
 
 constructor(){
   this._universiteter = {}; //obj, forkortelse nøkkel, Universitet-objekt innhold

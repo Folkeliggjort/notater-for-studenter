@@ -29,19 +29,32 @@ def lagAlleKlasser():
     notatsystem = open("notatsystem.js", "r", encoding="utf-8")
     #utfil
     utfil = open("./alleKlasser.js", "w", encoding="utf-8")
+    teller = 0
     for linje in notat:
-        utfil.write(linje)
+        if teller == 0: 
+            utfil.write(linje.split(' ', 1)[1])
+            teller += 1
+        else: utfil.write(linje)
     teller = 0
     for linje in emne:
         if teller in range(2): teller += 1
+        elif teller == 2: 
+            utfil.write(linje.split(' ', 1)[1])
+            teller += 1
         else: utfil.write(linje)
     teller = 0
     for linje in universitet:
-        if teller in range(2): teller += 1
+        if teller in range(3): teller += 1
+        elif teller == 3: 
+            utfil.write(linje.split(' ', 1)[1])
+            teller += 1
         else: utfil.write(linje)
     teller = 0
     for linje in notatsystem:
         if teller in range(4): teller += 1
+        elif teller == 4: 
+            utfil.write(linje.split(' ', 1)[1])
+            teller += 1
         else: utfil.write(linje)
     notat.close()
     emne.close()
