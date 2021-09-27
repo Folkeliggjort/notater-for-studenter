@@ -1,0 +1,49 @@
+/*Helt main*/
+body {
+    background-color: #f77c3f;
+    color: #392f29;
+    font-family: "Century Gothic", Arial, sans-serif;
+    font-size: 14px;
+  }
+  .innpakning {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #e2c9bc;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+/*Kolonnene*/
+.kolonne {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+  }
+  .kolonne:nth-child(2) {
+    border-left-style: none;
+    border-right-style: none;
+  }
+  #utskriftNotatsystem {
+    background-color: #ffffff;
+    width: 100% - 20px;
+    height: 40vh;
+    min-height: 400px;
+    display: flex;
+  }
+  #kolonneUniversiteter {
+    background-color: #cccccc;
+    width: 25%;
+  }
+  #kolonneEmner {
+    background-color: #dddddd;
+    width: 25%;
+  }
+  #kolonneNotater {
+    background-color: #eeeeee;
+    width: 50%;
+  }

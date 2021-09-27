@@ -1,0 +1,52 @@
+.knapp {
+    background-color: inherit;
+    height: 1.5em;
+    width: 100%;
+    vertical-align: middle;
+    padding-left: 0.25em;
+    white-space: nowrap;
+    display: block;
+    cursor: pointer;
+  }
+  .knapp:nth-child(even) { 
+    background-color: #bbbbbb;
+  }
+  .knapp:hover {
+    background-color: white;
+  }
+  .knapp summary{
+      background-color: inherit;
+  }
+  .valgtKnapp {
+    background-color: #ffffff;
+    height: 1.5em;
+    width: 100%;
+    vertical-align: middle;
+    padding-left: 0.25em;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  #kolonneNotater .knapp {
+    min-height: 1.5em;
+    height: auto;
+    white-space: normal;
+  }
+  #kolonneNotater .valgtKnapp {
+    min-height: 1.5em;
+    height: auto;
+    white-space: normal;
+  }
+.peekaboo {
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  list-style: none;
+}
+.peekaboo::marker {
+  display: none;
+}
+/*
+.linkNotat:hover {
+  color: grey;
+}
+*/

@@ -1,0 +1,1 @@
+Naviger helt inn i mappa backend, og kjør hovedprogram.py
