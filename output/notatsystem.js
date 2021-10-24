@@ -138,6 +138,12 @@ var notatsystem = new Notatsystem();
 var universitet; var emne; var notat;
 universitet = new Universitet('Universitetet i Oslo', 'UiO');
 notatsystem.leggTilUniversitet(universitet);
+emne = new Emne('English Phonetics and Intonation', 'ENG1103');
+universitet.leggTilEmne(emne);
+notat = new Notat('https://drive.google.com/drive/folders/1wsSA809HYVLgnYtPgy5pfaHEdWh7z9zC?usp=sharing', 'Intonation Notes (Recieved Pronunciation)', ['Silje Øksland Krohne'], '2021V', 'I have spent a lot of time studying for this course, and received an A after my examination. In preparing for my exam, these notes and my Phonetics Notes were my main tool. They are heavily influenced by the books on the curriculum.');
+emne.leggTilNotat(notat);
+notat = new Notat('https://drive.google.com/drive/folders/1s_0jKnjkXqOcl8qVnmttLheRsNJTlyV8?usp=sharing', 'Phonetics Notes (Recieved Pronunciation)', ['Silje Øksland Krohne'], '2021V', 'I have spent a lot of time studying for this course, and received an A after my examination. In preparing for my exam, these notes and my Intonation Notes were my main tool. They are heavily influenced by the books on the curriculum.');
+emne.leggTilNotat(notat);
 emne = new Emne('Introduksjon til objektorientert programmering', 'IN1000');
 universitet.leggTilEmne(emne);
 notat = new Notat('https://drive.google.com/file/d/1ciQ_2sOwDm6-UpkNGEWTevt7Q1ba6FLT/view', 'Notater i IN1000 Introduksjon til objektorientert programmering', ['Tobias Rade Evensen'], '2020H', 'Jeg var ikke blant de som brukte mest tid på studiene, men jeg tror likevel mange kan ha nytte av å se på arbeidet mitt. Til sammen brukte jeg 70 timer på faget, og jeg fikk A på eksamen. Notatene er skrevet for hånd på en Onyx Boox Max 3.');
@@ -174,11 +180,9 @@ emne = new Emne('Læring og Undervisning', 'PED1001');
 universitet.leggTilEmne(emne);
 notat = new Notat('https://drive.google.com/drive/folders/1CUS8cJzB5Megsnul-Cl1Tkb9CCG6o0J5?usp=sharing', 'Eksamensoppgaver H17 PED1001 og Notater i PED1001', ['Philip Lo'], '2017H', 'Dekker litt av Woolfolk, mye av Qvortrup & Widberg, Kvello og Gulbrandsen.');
 emne.leggTilNotat(notat);
-emne = new Emne('English Phonetics and Intonation', 'ENG1103');
+emne = new Emne('Privatrett 1', 'JUS1111');
 universitet.leggTilEmne(emne);
-notat = new Notat('https://drive.google.com/drive/folders/1s_0jKnjkXqOcl8qVnmttLheRsNJTlyV8?usp=sharing', 'Phonetics Notes (Recieved Pronunciation)', ['Silje Øksland Krohne'], '2021V', 'I have spent a lot of time studying for this course, and received an A after my examination. In preparing for my exam, these notes and my Intonation Notes were my main tool. They are heavily influenced by the books on the curriculum.');
-emne.leggTilNotat(notat);
-notat = new Notat('https://drive.google.com/drive/folders/1wsSA809HYVLgnYtPgy5pfaHEdWh7z9zC?usp=sharing', 'Intonation Notes (Recieved Pronunciation)', ['Silje Øksland Krohne'], '2021V', 'I have spent a lot of time studying for this course, and received an A after my examination. In preparing for my exam, these notes and my Phonetics Notes were my main tool. They are heavily influenced by the books on the curriculum.');
+notat = new Notat('https://succulent-quokka-656.notion.site/Notater-i-JUS1111-18744ef6cd8a4c929831c8c95473fa06', 'Notater i JUS1111', ['Tobias Rade Evensen'], '2021H', 'Jeg deler disse notatene mens jeg skriver dem. Ha derfor i tankene at alle kildehenvisninger og slikt ikke kommer til å være på plass før semesteret er over. Jeg er og klar over at alt stoffet ikke er "bra", men noe er bra nok, og det håper jeg kan komme andre til nytte. Hvis du vil melde og dele tanker rundt en god gjennomføring av dette faget, ta kontakt. (facebook.com/radeeven)');
 emne.leggTilNotat(notat);
 //funksjoner
 function plasserKnapperUniversiteter() {
