@@ -136,6 +136,18 @@ test(){
 }
 var notatsystem = new Notatsystem();
 var universitet; var emne; var notat;
+universitet = new Universitet('Høgskolen i Innlandet', 'HINN');
+notatsystem.leggTilUniversitet(universitet);
+emne = new Emne('Menneskerettigheter', 'JUS2008');
+universitet.leggTilEmne(emne);
+notat = new Notat('https://drive.google.com/file/d/130YyA4pnXCRq18ha6hSLj4R3FCHIeEgI/view?usp=sharing', 'Korte sammendrag av 39 avgjørelser fra EMD', ['Oscar Røseth Lindbäck'], 'Ikke oppgitt', 'Noen korte sammendrag av EMD-avgjørelser, sortert etter artikler. Nyttig til å sette seg inn i kjernesaker før eksamen.');
+emne.leggTilNotat(notat);
+universitet = new Universitet('Universitetet i Bergen', 'UiB');
+notatsystem.leggTilUniversitet(universitet);
+emne = new Emne('Rettargang', 'JUS242');
+universitet.leggTilEmne(emne);
+notat = new Notat('https://drive.google.com/file/d/1yYmGXgvcMq_-fPp1GaMZOUAg_CyS1nxe/view?usp=sharing', 'Oversiktsdokument JUS242 Rettergang', ['Oscar Røseth Lindbäck'], '2021V', 'Dette notatarket var ment å tjene som et notatark underveis i rettergangsemnet. Notatene er skrevet i løpet av rettergangsundervisningen, som betyr at det kan finnes misforståelser og gale påstander rundt omkring. Det meste har støtte i rettskilder. På slutten av dokumentet er det også lagt ved en del nyttige vedlegg og notater fra forelesningene i emnet (H2020/V2021). Vedlagt er også et flytskjema for preklusjonsreglene.');
+emne.leggTilNotat(notat);
 universitet = new Universitet('Universitetet i Oslo', 'UiO');
 notatsystem.leggTilUniversitet(universitet);
 emne = new Emne('English Phonetics and Intonation', 'ENG1103');
@@ -150,7 +162,7 @@ notat = new Notat('https://drive.google.com/file/d/1ciQ_2sOwDm6-UpkNGEWTevt7Q1ba
 emne.leggTilNotat(notat);
 emne = new Emne('Objektorientert programmering', 'IN1010');
 universitet.leggTilEmne(emne);
-notat = new Notat('https://www.notion.so/IN1010-9c36d74935e64bd49099b5022196dcd2', 'IN1010 i Notion (med kodesnutter)', ['Anton Lymarev'], '2021V', 'En strukturert oversikt av kurset med de viktigste begrepene og kodeeksempler (ikke kun tatt fra forelesninger). Det er noe forelesninger som er ikke notert, men det eksisterer redigerbare Notion-sider for dem, så disse kan utfylles av de som vil gjøre noe ekstra innsats.');
+notat = new Notat('https://romantic-noodle-e72.notion.site/IN1010-887375c46fa545ed8fa72a5680dcbbba', 'IN1010 i Notion (med kodesnutter)', ['Anton Lymarev'], '2021V', 'En strukturert oversikt av kurset med de viktigste begrepene og kodeeksempler (ikke kun tatt fra forelesninger). Det er noe forelesninger som er ikke notert, men det eksisterer redigerbare Notion-sider for dem, så disse kan utfylles av de som vil gjøre noe ekstra innsats.');
 emne.leggTilNotat(notat);
 notat = new Notat('https://drive.google.com/file/d/1RBte2SoyXeR_M-OvG4eJ3R18ucgZnl7y/view?usp=sharing', 'Notater i IN1010 Objektorientert programmering', ['Tobias Rade Evensen'], '2021V', 'Totalt brukte jeg 150 timer på emnet, og jeg fikk A på eksamen. Notatet er skrevet for hånd på en Onyx Boox Max 3.');
 emne.leggTilNotat(notat);
@@ -174,7 +186,7 @@ emne = new Emne('Logiske metoder', 'IN1150');
 universitet.leggTilEmne(emne);
 notat = new Notat('https://drive.google.com/drive/folders/1eRkCH4GtmIo_fGwz1k7Q4fhbHOlsY044?usp=sharing', 'Definisjoner og eksempler', ['Eric Svebakk'], '2021V', 'En oversikt over viktige begrep med definisjoner og noen eksempler');
 emne.leggTilNotat(notat);
-notat = new Notat('https://www.notion.so/IN1150-2b75c381c45b455aabae0e4c7ac72bf5', 'IN1150 i Notion (med eksempler på TeX formler)', ['Anton Lymarev'], '2021V', 'Ganske nøye notater av (nesten) alle kapittler i boka. Notatene er basert på nettkurset. Hver notat inneholder en lenke til nettkurset og en lenke til den skannet versonen av boka på min Google Drive. Som i IN1010, tomme kapittel-sider kan redigeres og derfor utfylles av de som vil hjelpe med å dekke hele pensum.');
+notat = new Notat('https://romantic-noodle-e72.notion.site/IN1150-308f4c552fec46849d4371fd89557c5b', 'IN1150 i Notion (med eksempler på TeX formler)', ['Anton Lymarev'], '2021V', 'Ganske nøye notater av (nesten) alle kapittler i boka. Notatene er basert på nettkurset. Hver notat inneholder en lenke til nettkurset og en lenke til den skannet versonen av boka på min Google Drive. Som i IN1010, tomme kapittel-sider kan redigeres og derfor utfylles av de som vil hjelpe med å dekke hele pensum.');
 emne.leggTilNotat(notat);
 emne = new Emne('Privatrett 1', 'JUS1111');
 universitet.leggTilEmne(emne);
@@ -183,18 +195,6 @@ emne.leggTilNotat(notat);
 emne = new Emne('Læring og Undervisning', 'PED1001');
 universitet.leggTilEmne(emne);
 notat = new Notat('https://drive.google.com/drive/folders/1CUS8cJzB5Megsnul-Cl1Tkb9CCG6o0J5?usp=sharing', 'Eksamensoppgaver H17 PED1001 og Notater i PED1001', ['Philip Lo'], '2017H', 'Dekker litt av Woolfolk, mye av Qvortrup & Widberg, Kvello og Gulbrandsen.');
-emne.leggTilNotat(notat);
-universitet = new Universitet('Universitetet i Bergen', 'UiB');
-notatsystem.leggTilUniversitet(universitet);
-emne = new Emne('Rettargang', 'JUS242');
-universitet.leggTilEmne(emne);
-notat = new Notat('https://drive.google.com/file/d/1yYmGXgvcMq_-fPp1GaMZOUAg_CyS1nxe/view?usp=sharing', 'Oversiktsdokument JUS242 Rettergang', ['Oscar Røseth Lindbäck'], '2021V', 'Dette notatarket var ment å tjene som et notatark underveis i rettergangsemnet. Notatene er skrevet i løpet av rettergangsundervisningen, som betyr at det kan finnes misforståelser og gale påstander rundt omkring. Det meste har støtte i rettskilder. På slutten av dokumentet er det også lagt ved en del nyttige vedlegg og notater fra forelesningene i emnet (H2020/V2021). Vedlagt er også et flytskjema for preklusjonsreglene.');
-emne.leggTilNotat(notat);
-universitet = new Universitet('Høgskolen i Innlandet', 'HINN');
-notatsystem.leggTilUniversitet(universitet);
-emne = new Emne('Menneskerettigheter', 'JUS2008');
-universitet.leggTilEmne(emne);
-notat = new Notat('https://drive.google.com/file/d/130YyA4pnXCRq18ha6hSLj4R3FCHIeEgI/view?usp=sharing', 'Korte sammendrag av 39 avgjørelser fra EMD', ['Oscar Røseth Lindbäck'], 'Ikke oppgitt', 'Noen korte sammendrag av EMD-avgjørelser, sortert etter artikler. Nyttig til å sette seg inn i kjernesaker før eksamen.');
 emne.leggTilNotat(notat);
 //funksjoner
 function plasserKnapperUniversiteter() {
