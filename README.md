@@ -1,4 +1,6 @@
 # Notater for studenter
+Dette er et gammelt prosjekt. Målet var å lage et system for deling av notater hvor man kan få alt på én side, slik at det blir mer fokus på selve notatene og at man ikke mister oversikt. De som delte notater måtte også godta at de delte notatene sine med en åpen åndsverklisens. 
+
 Du kan lese mer om notater for studenter på https://folkeliggjort.no/utdanning/notater-for-studenter/. Du bruker systemet ved å navigere til mappen "backend" i terminalen, og så kjøre hovedsystem.py. Programmet er skrevet med kunnskap fra IN1000, IT1 og IT2. Det kan altså skrives mye bedre. Vi setter veldig pris på bidrag, og tar gjerne imot en helt ny løsning. Sluttproduktet kan ikke bestå i "flere sider", og det må ha "alt på én side". Hvis du starter en egen gruppe for deling av notater, må dere gjerne sende inn notater til oss ved å selv legge inn notater i systemet og så sende en "pull request". 
 
 # Om lisens
